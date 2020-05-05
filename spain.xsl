@@ -14,7 +14,9 @@
     
   
     <xsl:template match="/">
-        <records>
+        <records xmlns="https://www.etienne.com"  
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://www.etienne.com spain_output.xsd">
             <xsl:for-each select="//record">
                 <record>
                     <date>
